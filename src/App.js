@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'
+//Components
+import Nav from './components/Nav'
+//Pages
+import Home from './pages/Home'
+import MarketNews from './pages/MarketNews';
+import ForexNews from './pages/ForexNews';
+import CryptoNews from './pages/CryptoNews';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+     <Nav />
+
+     <Routes>
+          <Route path='/' element={<Home/>} /> 
+          <Route path='news/market' element={<MarketNews />} /> 
+          <Route path='news/forex' element={<ForexNews />} /> 
+          <Route path='news/cryptocurrency' element={<CryptoNews />} /> 
+     </Routes>
+
     </div>
   );
 }
 
 export default App;
+
