@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios'
+// Components
 import MarketNewsData from '../../components/MarketNewsData'
 
 // https://api.finage.co.uk/news/market/amzn?apikey=API_KEY99OYVBHYYWY38FYRWAKQIUX4E45CMEFJ
@@ -44,7 +45,9 @@ const MarketNews = () => {
                 {
                     newsData.map((marketArticle) => {
                         return (
-                            <MarketNewsData marketArticle={marketArticle}/>
+                            <MarketNewsData 
+                            key={marketArticle.title}
+                            marketArticle={marketArticle}/>
                         )
                     })
                 }

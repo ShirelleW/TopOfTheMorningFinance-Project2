@@ -4,4 +4,6 @@ Goal: To provide a website that brings the user current, up-to-date stock market
 
 ## -----Commits-----
 
-* First Commit: Incorporated Nav Bar into app. Got Market News to display news article upon user stock symbol ssearch
+* First Commit: Incorporated Nav Bar into app. Got Market News to display news article upon user stock symbol search
+
+* Second Commit: Changed website icon. Got Forex News and CryptoCurrency News to display article upon user symbol search. 
