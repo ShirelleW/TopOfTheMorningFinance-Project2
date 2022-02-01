@@ -1,11 +1,19 @@
 import React from 'react';
+// CSS
+import '../../CSS/HomePageCSS/style.css'
+// Components
+import MostActive from '../../components/HomePageData/MostActive';
+import MostGains from '../../components/HomePageData/MostGains';
+import MostLosing from '../../components/HomePageData/MostLosing';
 
-const Index = () => {
+const Home = () => {
     return (
-        <div>
-            Landing Page
+        <div className='home-container'>
+            <MostActive />
+            <MostGains />
+            <MostLosing />
         </div>
     );
 }
 
-export default Index;
+export default Home;
