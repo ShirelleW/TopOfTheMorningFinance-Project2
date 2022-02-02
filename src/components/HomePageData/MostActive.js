@@ -8,8 +8,8 @@ const MostActive = () => {
     const apiKey = 'API_KEY98YYMRJAV3X1NJSEBVJWIOO2MUIL4CBC'
 
 
-    const active = () => {
-        axios.get(`https://api.finage.co.uk/market-information/us/most-actives?apikey=${apiKey}`)
+    const active = async () => {
+        await axios.get(`https://api.finage.co.uk/market-information/us/most-actives?apikey=${apiKey}`)
             .then(response => setActiveStocks(response.data))
             .catch(err => console.error(err))
     }

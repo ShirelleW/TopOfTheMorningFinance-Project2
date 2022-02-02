@@ -19,6 +19,7 @@ const Nav = () => {
                             <Link className="nav-link active" aria-current="page" to="news/market">Market News</Link>
                             <Link className="nav-link" to="news/forex">Forex News</Link>
                             <Link className="nav-link" to="news/cryptocurrency">CryptoCurrency News</Link>
+                            <Link className="nav-link" to="stockcharts">Market Stock Charts</Link>
                         </div>
                     </div>
                 </div>

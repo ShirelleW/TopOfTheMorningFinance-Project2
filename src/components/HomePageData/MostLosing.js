@@ -8,8 +8,8 @@ const MostLosing = () => {
     const apiKey = 'API_KEY98YYMRJAV3X1NJSEBVJWIOO2MUIL4CBC'
 
 
-    const losers = () => {
-        axios.get(`https://api.finage.co.uk/market-information/us/most-losers?apikey=${apiKey}`)
+    const losers = async () => {
+        await axios.get(`https://api.finage.co.uk/market-information/us/most-losers?apikey=${apiKey}`)
             .then(response => setLosingStocks(response.data))
             .catch(err => console.error(err))
     }

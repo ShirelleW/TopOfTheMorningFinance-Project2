@@ -8,8 +8,8 @@ const MostGains = () => {
     const apiKey = 'API_KEY98YYMRJAV3X1NJSEBVJWIOO2MUIL4CBC'
 
 
-    const gainers = () => {
-        axios.get(`https://api.finage.co.uk/market-information/us/most-gainers?apikey=${apiKey}`)
+    const gainers = async () => {
+        await axios.get(`https://api.finage.co.uk/market-information/us/most-gainers?apikey=${apiKey}`)
             .then(response => setGainStocks(response.data))
             .catch(err => console.error(err))
     }
