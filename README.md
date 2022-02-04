@@ -11,3 +11,10 @@ Goal: To provide a website that brings the user current, up-to-date stock market
 * Third Commit: Rendered home page content. 
 
 * Fourth Commit: Rendered stock market charts according to user request. 
+
+* Fifth Commit: Completed currencyu converter. 
+
+
+## ----- Sources -----
+
+https://www.youtube.com/watch?v=XN5elYWiSuw

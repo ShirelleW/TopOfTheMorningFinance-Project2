@@ -1,0 +1,16 @@
+.symbolsList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usSymbols{
+    width: 30%
+}
+
+.forexSymbols{
+    width: 30%
+}
+
+.cryptoSymbols{
+    width: 30%
+}
