@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
+import UserContext from '../../Context/UserContext';
 
 
 
 
 const Nav = () => {
+
+    const user = useContext(UserContext)
+    
+    console.log("nav", user)
     return (
         <div>
             <ul className="nav nav-tabs">
@@ -33,9 +39,17 @@ const Nav = () => {
                 <li className="nav-item">
                     <Link className="nav-link" to="stockcharts">Market Stock Charts</Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="login">Login</Link>
-                </li>
+                {
+                    !user 
+                    ?
+                        <li className="nav-item">
+                            <Link className="nav-link" to="login">Login</Link>
+                        </li>
+                    :
+                        <li className="nav-item">
+                            <Link className="nav-link" to="generalNews">Hello {user}! View Your Top News Stories</Link>
+                        </li>
+                }
                 
             </ul>
         </div>

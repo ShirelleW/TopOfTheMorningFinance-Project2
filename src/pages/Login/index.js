@@ -11,10 +11,11 @@ const Login = ({ setUser }) => {
     const handleChange = (e) => {
         setUserName(e.target.value);
     };
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-        // setUser(userName);
-        navigate('/news/market', {replace: true}) 
+        setUser(userName);
+        navigate('/news/market') 
     }
 
 
@@ -23,7 +24,7 @@ const Login = ({ setUser }) => {
                 <div className="text-center">
                     <form id="login-form"
                         onSubmit={handleSubmit}>
-                        <img className="mb-4" src="https://images.unsplash.com/photo-1544716278-e513176f20b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="" width="100" height="100" />
+                        <img className="mb-4" src="https://news.tradimo.com/wp-content/uploads/2019/11/technicalanalysis.jpg" alt="" width="250" height="250" />
                         <h1 className="h3 mb-3 fw-normal"></h1>
 
                         <div className="form-floating">

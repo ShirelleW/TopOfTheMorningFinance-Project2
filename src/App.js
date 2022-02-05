@@ -10,10 +10,10 @@ import ForexNews from './pages/ForexNews';
 import CryptoNews from './pages/CryptoNews';
 import StockCharts from './pages/StockCharts';
 import CurrencyConveter from './pages/CurrencyConverter';
-import CryptoConverter from './pages/SymbolsList';
 import UserContext from './Context/UserContext';
 import Login from './pages/Login';
 import SymbolsList from './pages/SymbolsList';
+import GeneralNews from './pages/GeneralNews';
 
 
 
@@ -36,7 +36,8 @@ const App = () => {
           <Route path='stockcharts' element={<StockCharts />} /> 
           <Route path='converter/currency' element={<CurrencyConveter />} /> 
           <Route path='symbolslist' element={<SymbolsList />} />
-          <Route path='login' element={<Login />} /> 
+          <Route path='login' element={<Login setUser={setUser}/>} /> 
+          <Route path='generalNews' element={<GeneralNews setUser={setUser}/>} />
      </Routes>
 
      </UserContext.Provider> 

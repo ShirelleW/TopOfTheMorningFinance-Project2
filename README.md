@@ -12,7 +12,7 @@ Goal: To provide a website that brings the user current, up-to-date stock market
 
 * Fourth Commit: Rendered stock market charts according to user request. 
 
-* Fifth Commit: Completed currencyu converter. 
+* Fifth Commit: Completed currency converter. Rendered Stock, Forex, and Crypto symbol list. 
 
 
 ## ----- Sources -----
