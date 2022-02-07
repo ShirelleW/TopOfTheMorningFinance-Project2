@@ -5,3 +5,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.losing{
+    width: 33.333%;
+}
+

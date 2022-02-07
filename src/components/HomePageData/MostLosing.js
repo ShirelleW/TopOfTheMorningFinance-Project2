@@ -24,7 +24,7 @@ const MostLosing = () => {
 
 
     return (
-            <div className='gains'>
+            <div className='losing'>
                 <h3>Most Losing US Stocks</h3>
                 <div>
                     {
