@@ -3,6 +3,8 @@ import UserContext from '../../Context/UserContext';
 import { useContext, useEffect, useState} from 'react' 
 // Components
 import GeneralNewsData from '../../components/GeneralNewsData';
+// style
+import '../../CSS/GeneralNewsCSS/style.css'
 
 const GeneralNews = () => {
 
@@ -20,9 +22,9 @@ const GeneralNews = () => {
     }, [])
 
     return (
-        <div>
-            Hello {user}! Here are the top news stories of today!
-            <div id="generalNews-container">
+        <div className='generalNews-container'>
+           <h3 id="greeting" >Hello {user}! Here are the top news stories of today! </h3>
+            <div id="generalNews-container-cards">
                 {
                     generalNews.map((article) => {
                         return (

@@ -39,14 +39,13 @@ const Chart = () => {
     return (
         
         <div>
-             <h2>US Stock Market Charts</h2>
              <h4>Stock: {userInput}</h4>
             <form onSubmit={handleSubmit}>
-                <label htmlFor='userInput'>Search: </label>
                 <input
                     type='text'
                     id='userInput'
                     name='userInput'
+                    placeholder='Search...'
                     onChange={getValue}
                 />
                 <button type='submit'>Display Chart</button>

@@ -3,6 +3,8 @@ import { useState } from 'react';
 import axios from 'axios'
 // Components
 import MarketNewsData from '../../components/MarketNewsData'
+//Style
+import '../../CSS/MarketNewsCSS/style.css'
 
 // https://api.finage.co.uk/news/market/amzn?apikey=API_KEY99OYVBHYYWY38FYRWAKQIUX4E45CMEFJ
 
@@ -26,22 +28,22 @@ const MarketNews = () => {
     }
 
     return (
-        <div>
-            <h2>Market News</h2>
-            {console.log('data test', newsData)}
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='userInput'>Search: </label>
+        <div className='main-container'>
+            <h2 id="title" >Market News</h2>
+            {/* {console.log('data test', newsData)} */}
+            <form id="form" onSubmit={handleSubmit}>
                 <input
                     type='text'
                     id='userInput'
                     name='userInput'
+                    placeholder='Search...'
                     onChange={handleChange}
                     value={userInput}
                 />
                 <input type="submit" value='submit' />
-            </form>
+            </form> <br />
 
-            <div id="market-container">
+            <div className="market-container">
                 {
                     newsData.map((marketArticle) => {
                         return (

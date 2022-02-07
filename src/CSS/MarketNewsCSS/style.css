@@ -1,0 +1,44 @@
+.main-container{
+    background-color: #FFC50F;
+}
+#title{
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+
+}
+
+#search{
+    font-size: 18px;
+}
+
+#userInput{
+    font-size: 18px;
+}
+
+.market-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
+.crypto-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
+.forex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
+#newsCards{
+    height: 250px;
+}

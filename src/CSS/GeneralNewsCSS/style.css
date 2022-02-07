@@ -1,7 +1,18 @@
-.home-container{
+.generalNews-container{
     background-color: #ffc50f;
+}
+
+#greeting{
     text-align: center;
+}
+
+#generalNews-container-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
+#newsCards{
+    height: 250px;
 }

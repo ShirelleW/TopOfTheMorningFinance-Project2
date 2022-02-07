@@ -13,8 +13,8 @@ const CurrencyConverterData = (props) => {
 
     return (
         <div>
-            <input type='number' value= {amount} onChange={onChangeAmount}/>
-            <select value={selectedCurrency} onChange={onChangeCurrency} name="currencies" id="input-numbers">
+            <input id = 'input' type='number' value= {amount} onChange={onChangeAmount}/>
+            <select id='select' value={selectedCurrency} onChange={onChangeCurrency} name="currencies" id="input-numbers">
                 {currencyOptions.map(option =>(
                     <option key={option} value={option}>{option}</option>
                 ))}

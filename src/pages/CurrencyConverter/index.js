@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import CurrencyConverterData from '../../components/CurrencyConveterData';
+// Style
+import '../../CSS/CurrencyConverterCSS/style.css'
 
 
 const baseURL = 'http://api.exchangeratesapi.io/v1/latest?access_key=9420e92716a0e473b0660a3f02021b38'
@@ -61,16 +63,21 @@ const CurrencyConveter = () => {
     }
 
     return (
-        <div>
-            <h1>Convert from EURs</h1>
+        <div className='cc-container'>
+
+            <h1 id="fromEurs">Convert from EURs</h1>
+            <div className='first-container'>
             <CurrencyConverterData
+                className
                 currencyOptions={currencyOptions}
                 selectedCurrency={fromCurrency}
                 onChangeCurrency={e => setFromCurrency(e.target.value)}
                 onChangeAmount={handleFromAmountChange}
                 amount={fromAmount}
             />
-            <div>=</div>
+            </div>
+            <div id='equal-sign'>=</div>
+            <div className='second-container'>
             <CurrencyConverterData
                 currencyOptions={currencyOptions}
                 selectedCurrency={toCurrency}
@@ -78,6 +85,7 @@ const CurrencyConveter = () => {
                 onChangeAmount={handleToAmountChange}
                 amount={toAmount}
             />
+            </div>
         </div>
     );
 }

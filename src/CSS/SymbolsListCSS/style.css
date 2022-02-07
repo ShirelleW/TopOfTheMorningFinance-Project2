@@ -1,4 +1,5 @@
 .symbolsList{
+    background-color: #FFC50F;
     display: flex;
     justify-content: space-between;
 }
@@ -13,4 +14,8 @@
 
 .cryptoSymbols{
     width: 30%
+}
+
+.card{
+    border-color: black;
 }

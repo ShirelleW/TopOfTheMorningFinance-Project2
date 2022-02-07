@@ -3,6 +3,8 @@ import { useState } from 'react';
 import axios from 'axios'
 // Components
 import ForexNewsData from '../../components/ForexNewsData';
+//Style
+import '../../CSS/MarketNewsCSS/style.css'
 
 const ForexNews = () => {
     const [userInput, setUserInput] = useState('')
@@ -22,22 +24,22 @@ const ForexNews = () => {
     }
 
     return (
-        <div>
-            <h2>Forex News</h2>
-            {console.log('data test', newsData)}
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='userInput'>Search: </label>
+        <div className='main-container'>
+            <h2 id="title">Forex News</h2>
+            {/* {console.log('data test', newsData)} */}
+            <form id="form" onSubmit={handleSubmit}>
                 <input
                     type='text'
                     id='userInput'
                     name='userInput'
+                    placeholder='Search...'
                     onChange={handleChange}
                     value={userInput}
                 />
                 <input type="submit" value='submit' />
-            </form>
+            </form> <br />
 
-            <div id="forex-container">
+            <div className="forex-container">
                 {
                     newsData.map((forexArticle) => {
                         return (

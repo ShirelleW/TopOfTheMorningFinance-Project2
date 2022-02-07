@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
+// Style
+import '../../CSS/LoginCSS/style.css'
 
 const Login = ({ setUser }) => {
 
@@ -15,12 +17,12 @@ const Login = ({ setUser }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setUser(userName);
-        navigate('/news/market') 
+        navigate('/') 
     }
 
 
         return (
-            <div>
+            <div id="login-body">
                 <div className="text-center">
                     <form id="login-form"
                         onSubmit={handleSubmit}>

@@ -3,6 +3,8 @@ import { useState } from 'react';
 import axios from 'axios'
 // Components
 import CryptoNewsData from '../../components/CryptoNewsData'
+//Style
+import '../../CSS/MarketNewsCSS/style.css'
 
 const CryptoNews = () => {
     const [userInput, setUserInput] = useState('')
@@ -22,22 +24,21 @@ const CryptoNews = () => {
     }
 
     return (
-        <div>
-            <h2>CryptoCurrency News</h2>
-            {console.log('data test', newsData)}
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='userInput'>Search: </label>
+        <div className='main-container'>
+            <h2 id="title">CryptoCurrency News</h2>
+            <form id="form" onSubmit={handleSubmit}>
                 <input
                     type='text'
                     id='userInput'
                     name='userInput'
+                    placeholder='Search...'
                     onChange={handleChange}
                     value={userInput}
                 />
                 <input type="submit" value='submit' />
-            </form>
+            </form> <br />
 
-            <div id="crypto-container">
+            <div className="crypto-container">
                 {
                     newsData.map((cryptoArticle) => {
                         return (
