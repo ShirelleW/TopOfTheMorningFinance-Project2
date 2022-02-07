@@ -18,6 +18,8 @@ Goal: To provide a website that brings the user current, up-to-date stock market
 
 * Seventh Commit: Cited Sources. 
 
+* Eight Commit: deploy site: https://brave-heisenberg-45903e.netlify.app NOTE: the currency conveter component does not work from the deploy link but everything else does. Also, the 'top news stories' component may not work because the API I used trial period ends on 2/14/2020.  
+
 ## ----- Sources -----
 
 https://www.youtube.com/watch?v=XN5elYWiSuw
