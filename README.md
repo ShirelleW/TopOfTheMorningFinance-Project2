@@ -16,6 +16,10 @@ Goal: To provide a website that brings the user current, up-to-date stock market
 
 * Sixth Commit: Styled application. 
 
+* Seventh Commit: Cited Sources. 
+
 ## ----- Sources -----
 
 https://www.youtube.com/watch?v=XN5elYWiSuw
+https://www.youtube.com/watch?v=sE08f4iuOhA
+https://www.youtube.com/watch?v=wlz8a9dd4wE&t=498s
