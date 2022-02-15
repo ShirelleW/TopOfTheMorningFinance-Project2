@@ -40,6 +40,7 @@ const Chart = () => {
         
         <div>
              <h4>Stock: {userInput}</h4>
+             <h6>Input stock ticker (ex: msft, amzn, fb, etc)</h6>
             <form onSubmit={handleSubmit}>
                 <input
                     type='text'
