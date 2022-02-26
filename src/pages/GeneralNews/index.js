@@ -11,7 +11,7 @@ const GeneralNews = () => {
     const user = useContext(UserContext) 
 
     const [generalNews, setGeneralNews] = useState([])
-    const apiKey = "ndrhuuanxhvwsf9qc1c0ryxsw8ckhi1lplorcdll"
+    const apiKey = "9mm7ze1pv65x1uuqoyeg5pgrr44psuuvttulvmr2"
 
 
 
