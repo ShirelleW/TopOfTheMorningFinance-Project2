@@ -1,5 +1,6 @@
 .main-container{
     background-color: #FFC50F;
+    height: 100%;
 }
 #title{
     text-align: center;
@@ -19,6 +20,7 @@
 }
 
 .market-container{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -26,6 +28,7 @@
 }
 
 .crypto-container{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -33,6 +36,7 @@
 }
 
 .forex-container{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

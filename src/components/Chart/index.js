@@ -9,7 +9,6 @@ const Chart = () => {
     const [stockData, setStockData] = useState([])
     const [userInput, setUserInput] = useState('')
     const [data, setData] = useState('')
-    const apiKey = 'TK0XSDFHM5IETCOP'
 
     const getValue = (event) => {
         console.log(event.target.value)
